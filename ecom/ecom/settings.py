@@ -80,8 +80,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'db_ecom',
         'USER':'postgres',
-        'PASSWORD':
-        'HOST':'root',
+        'PASSWORD':'root',
+        'HOST':'localhost',
+        'PORT':'5432',
 
     }
 }
