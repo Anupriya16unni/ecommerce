@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOMMERCE</title>
+    <!-- <link rel="icon" type="image/x-icon" href="{% static 'image/alogo.jpg' %}" height="100px"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+</head>
+<style>
+  body {
+	background: linear-gradient(90deg, #C7C5F4, #776BCC);		
+}
+  
+    .main{
+        width: 700px;
+        height: 1050px;
+        background-color: #fff;
+        margin-top: 40px;
+        margin-left: 350px;
+        padding-left: 80px;
+        padding-top: 30px;
+        border-radius: 50px;
+        
+    }
+    .form-control, textarea{
+        width: 400px;
+        border: solid 1px black;
+    }
+    .col-form-label{
+        color: black;
+        font-weight: 500;
+    }
+    .btn1{
+        width: 250px;
+        color: black;
+        font-weight: bolder;
+        margin-left: 30px;
+    }
+    .btn2{
+      width: 250px;
+        color: black;
+        font-weight: bolder;
+        margin-left: 30px;
+    }
+    h1{
+        font-family: 'Times New Roman', Times, serif;
+       margin-left: 90px;
+        margin-bottom: 20px;
+      background: linear-gradient(to right, #3b34cc 0%, #776BCC 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 35px;
+
+    }
+</style>
+<div class="main shadow"> 
+    <h1>REGISTRATION FORM</h1><br>
+    <div class="mb-3 row">
+        
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Name </label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputPassword">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputPassword">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Address</label>
+        <div class="col-sm-10">
+            <textarea name="" id="" cols="52" rows="5"></textarea>
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Mobile Number</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="inputPassword">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Adhar Number</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="inputPassword">
+        </div>
+      </div>
+      <p>Bank accound Details</p>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Holder Name </label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputPassword">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Account Number</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="inputPassword">
+        </div>
+      </div>
+      
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">IFSC code</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="inputPassword">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Username </label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputPassword">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword">
+        </div>
+      </div>
+      
+      <a class="btn btn-warning btn1" href="">Register</a>
+      <a class="btn btn-secondary btn2" href="">Reset all</a>  
+</div>    
+</body>
+</html>
