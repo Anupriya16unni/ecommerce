@@ -67,6 +67,9 @@
 
     }
 </style>
+<body>
+<form action="" method="POST">
+  {% csrf_token %}
 <div class="main shadow"> 
     <h1>REGISTRATION FORM</h1><br>
     <div class="mb-3 row">
@@ -75,74 +78,75 @@
       <div class="mb-3 row">
         <label for="inputPassword" class="col-sm-2 col-form-label">Name </label>
         <div class="col-sm-10">
-          <input type="text" class="form-control" id="inputPassword">
+          <input type="text" class="form-control" id="inputPassword" name="name">
         </div>
       </div>
       <div class="mb-3 row">
         <label for="inputPassword" class="col-sm-2 col-form-label">Email</label>
         <div class="col-sm-10">
-          <input type="email" class="form-control" id="inputPassword">
+          <input type="email" class="form-control" id="inputPassword" name="email">
         </div>
       </div>
       <div class="mb-3 row">
         <label for="inputPassword" class="col-sm-2 col-form-label">Address</label>
         <div class="col-sm-10">
-            <textarea name="" id="" cols="52" rows="5"></textarea>
+            <textarea name="address" id="" cols="52" rows="5"></textarea>
         </div>
       </div>
       <div class="mb-3 row">
         <label for="inputPassword" class="col-sm-2 col-form-label">Mobile Number</label>
         <div class="col-sm-10">
-          <input type="number" class="form-control" id="inputPassword">
+          <input type="number" class="form-control" id="inputPassword" name="phn">
         </div>
       </div>
       <div class="mb-3 row">
         <label for="inputPassword" class="col-sm-2 col-form-label">Adhar Number</label>
         <div class="col-sm-10">
-          <input type="number" class="form-control" id="inputPassword">
+          <input type="number" class="form-control" id="inputPassword" name="adhar">
         </div>
       </div>
       <p>Bank accound Details</p>
       <div class="mb-3 row">
         <label for="inputPassword" class="col-sm-2 col-form-label">Holder Name </label>
         <div class="col-sm-10">
-          <input type="text" class="form-control" id="inputPassword">
+          <input type="text" class="form-control" id="inputPassword" name="holder">
         </div>
       </div>
       <div class="mb-3 row">
         <label for="inputPassword" class="col-sm-2 col-form-label">Account Number</label>
         <div class="col-sm-10">
-          <input type="number" class="form-control" id="inputPassword">
+          <input type="number" class="form-control" id="inputPassword" name="acc_num">
         </div>
       </div>
       
       <div class="mb-3 row">
         <label for="inputPassword" class="col-sm-2 col-form-label">IFSC code</label>
         <div class="col-sm-10">
-          <input type="number" class="form-control" id="inputPassword">
+          <input type="text" class="form-control" id="inputPassword" name="ifsc">
         </div>
       </div>
       <div class="mb-3 row">
         <label for="inputPassword" class="col-sm-2 col-form-label">Username </label>
         <div class="col-sm-10">
-          <input type="text" class="form-control" id="inputPassword">
+          <input type="text" class="form-control" id="inputPassword" name="uname">
         </div>
       </div>
       <div class="mb-3 row">
         <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
         <div class="col-sm-10">
-          <input type="password" class="form-control" id="inputPassword">
+          <input type="password" class="form-control" id="inputPassword" name="pass">
         </div>
       </div>
       <div class="mb-3 row">
         <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
         <div class="col-sm-10">
-          <input type="password" class="form-control" id="inputPassword">
+          <input type="password" class="form-control" id="inputPassword" name="cnpass">
         </div>
       </div>
       
-      <a class="btn btn-warning btn1" href="">Register</a>
-      <a class="btn btn-secondary btn2" href="">Reset all</a>  
+      <button class="btn btn-warning btn1" type="submit">REGISTER</button> 
+      <button class="btn btn-secondary btn2" type="reset">RESET ALL</button>  
 </div>    
+</form>
 </body>
 </html>

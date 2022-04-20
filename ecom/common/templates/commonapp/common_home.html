@@ -157,11 +157,20 @@ a{
         <div class="header">
             <ul class="nav fw-bold nav1">
                 <div class="nav nav2">
+                {% if type == "admin" %}
                 <li class="nav-item col-md-3">
-                    <a class="nav-link a1 " href="{% url 'customer_login' %}">CUSTOMER LOGIN</a>
+                    <a class="nav-link a1 " href="{% url 'customer_login' %}">Admin LOGIN</a>
                 </li>
+                {% else %}
                 <li class="nav-item col-md-3">
+                    <a class="nav-link a1 " href="{% url 'customer_login' %}">customer LOGIN</a>
+                </li>
+                {% endif %}
+                <!-- <li class="nav-item col-md-3">
                     <a class="nav-link a2 " href="{% url 'reseller_login' %}">RESELLER LOGIN</a>
+                </li> -->
+                <li class="nav-item col-md-3">
+                    <a class="nav-link a2 " href="{% url 'reseller_login' %}">hello,{{user|upper}}</a>
                 </li>
                 </div>
             </ul>
