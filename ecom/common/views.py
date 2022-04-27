@@ -1,19 +1,43 @@
 import email
 from email.headerregistry import Address
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Customer, Reseller
 
 # Create your views here.
 def common_home (request):
-    username="anu"
+    username="athi"
+    # request.session['user_id']=20
     type="customer"
     return render (request,'commonapp/common_home.html',{"user":username,"type":type})
 
 def customer_login (request):
-    return render (request,'commonapp/customer_login.html')
+    error=''
+    # print(request.session['user_id'])
+    if request.method=='POST':
+        cus_name=request.POST['uname']
+        cus_pass=request.POST['pass']
+        try:
+            user_data=Customer.objects.get(user_name=cus_name,password=cus_pass)
+            request.session['customer_id']=user_data.id
+            return redirect('customer_home')
+        except:
+            error="invalid username or password"
+        # if user_data:
+    return render (request,'commonapp/customer_login.html',{'error':error})
 
 def reseller_login (request):
-    return render (request,'commonapp/reseller_login.html')
+    error=''
+    if request.method=='POST':
+        res_name=request.POST['uname']
+        res_pass=request.POST['pass']
+        seller_data=Reseller.objects.filter(user_name=res_name,password=res_pass).exists()
+        if seller_data:
+            seller=Reseller.objects.get(user_name=res_name,password=res_pass)
+            request.session['seller_id']=seller.id
+            return redirect('reseller_home')
+        else:
+            error="invalid username or password"
+    return render (request,'commonapp/reseller_login.html',{"error":error})
 
 def reseller_signup (request):
     if request.method=='POST':
